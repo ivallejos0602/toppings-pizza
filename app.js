@@ -107,7 +107,9 @@ console.log(primerTopping.classList.contains('fondo-marron'));
 
 // eliminar una clase de un elemento
 // el item de aceitunas en la lista se ve distinto porque aca se elimina la clase del estilo "topping"
-console.log(primerTopping.classList.remove('topping'));
+
+// con la sig. sentencia elimino la clase topping del elemento
+//console.log(primerTopping.classList.remove('topping'));
 console.log(primerTopping.classList);
 
 // agregar una clase
@@ -161,15 +163,14 @@ console.log("2:11 hs");
  */
 console.log("Event Listener 2:27 hs");
 
-function mostrarClic(e){
-  console.log(e.target);
-}
-
 const toppings2 = document.getElementsByClassName('topping');
 
+console.log("ToPpinGs : ");
+console.log(toppings2);
+
+console.log("imprimiendo los toppings...");
 
 for (const topping of toppings2){
-  console.log(topping);
   topping.addEventListener('click',(e) => {
     console.log(e.target.innerText);
   });
